@@ -9,7 +9,7 @@ public class Celular {
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
-        this.encendido = false; 
+        this.encendido = true; 
     }
 
     
