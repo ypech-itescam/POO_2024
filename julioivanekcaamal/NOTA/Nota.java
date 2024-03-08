@@ -2,7 +2,7 @@ package julioivanekcaamal.NOTA;
 /**
  * Notas
  */
-public class Notas {
+public class Nota {
 
     private String fecha;
     private String autor;
@@ -10,7 +10,7 @@ public class Notas {
     private String tipoNota;
     private String texto;
 
-    public Notas (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
+    public Nota (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
         setFecha(fecha);
         setAutor(autor);
         setFechaLimite(fechaLimite);
