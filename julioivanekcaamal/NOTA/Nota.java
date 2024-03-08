@@ -9,6 +9,7 @@ public class Nota {
     private String fechaLimite;
     private String tipoNota;
     private String texto;
+    
 
     public Nota (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
         setFecha(fecha);
