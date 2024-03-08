@@ -12,7 +12,7 @@ public class Color {
 
     public Color(String nombre, String ansi){
         setColor(nombre);
-        this.ansi = ansi;
+        setColorAnsi(ansi);
     }
 
     public String getColor(){
@@ -24,12 +24,22 @@ public class Color {
     public String getColorAnsi(){
         return ansi;
     }
-    public void setColorAnsi(){
-        Scanner A = new Scanner(System.in);
-        System.out.print("Que color desea su mensaje : rojo,verde,amarillo y azul. (color en minusculas) = ");
-        String color = A.nextLine();
-            
+    public void setColorAnsi(String ansi){
+        this.ansi = ansi.equals(" ")? " ":ansi;
+    }
+    public void colores(){
+        switch (nombre) {
+            case String rojo:
+                "\ e [0; 31m"
+                break;
+            default:
+                break;
+        }
     }
 
 
 }
+
+
+//color = nombre == ansi 
+//Color 
