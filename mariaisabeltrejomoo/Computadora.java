@@ -51,7 +51,7 @@ public class Computadora {
     public void apagar() {
         System.out.println("La computadora se ha apagado.");
     }
-    public String toString(){
-        return("Mi computadora \n"+ "marca: "+ getMarca()+"modelo: "+ getModelo()+"color: "+getColor()+"memoria RAM: "+ getMemoriaRAM()+ " GB"+"sistema operativa: "+getTipoSistema());
+    public void info(){
+        System.out.println("Mi computadora \n"+ "marca: "+ getMarca()+"modelo: "+ getModelo()+"color: "+getColor()+"memoria RAM: "+ getMemoriaRAM()+ " GB"+"sistema operativa: "+getTipoSistema());
     }
 }
