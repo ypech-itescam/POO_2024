@@ -16,7 +16,7 @@ public class Computadora {
         return marca;
     }
     public void setMarca(String marca){
-        this.marca=marca.equals("")?"Lenovo":marca;
+        this.marca=marca.equals("")?"LENOVO":marca;
     }
     public String getColor(){
         return color;
