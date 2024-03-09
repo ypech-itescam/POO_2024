@@ -1,4 +1,4 @@
-package julioivanekcaamal.TERMOMETRO_DIGITAL;
+package julio_ek.TERMOMETRO_DIGITAL;
 
 public class TermometroDigital {
      /////////////////////////////////////////////atributos
