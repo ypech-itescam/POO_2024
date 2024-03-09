@@ -8,9 +8,8 @@ public class Color {
     private String ansi;
     
 
-    public Color(String nombre, String ansi){
+    public Color(String nombre){
         setColor(nombre);
-        setColorAnsi(ansi);
     }
 
     public String getColor(){
@@ -23,11 +22,9 @@ public class Color {
         return ansi;
     }
     public void setColorAnsi(String ansi){
-        this.ansi = ansi.equals(" ")? "\\e[0;37m":ansi;
-    }
-    public void colores(){
 
     }
+    
 }
 
 
