@@ -7,16 +7,16 @@ public class BlocDeNotas {
     public BlocDeNotas (){
 
     }
-    public void addNota(){
+    public void agregarNota(){
 
     }
-    public void saveNota(){
+    public void guardarNota(){
 
     }
-    public void updateNota(){
+    public void actulizarNota(){
 
     }
-    public void updateNote(){
+    public void actulizarNote(){
 
     }
     public Nota getNota(){

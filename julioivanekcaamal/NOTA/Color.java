@@ -9,6 +9,7 @@ public class Color {
 
     private String nombre;
     private String ansi;
+    private Color color;
 
     public Color(String nombre, String ansi){
         setColor(nombre);
@@ -28,13 +29,10 @@ public class Color {
         this.ansi = ansi.equals(" ")? " ":ansi;
     }
     public void colores(){
-        switch (nombre) {
-            
+       
     }
-
-
 }
-}
+
 
 
 //color = nombre == ansi 
