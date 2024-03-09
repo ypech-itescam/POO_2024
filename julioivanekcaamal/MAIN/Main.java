@@ -8,3 +8,13 @@ import julioivanekcaamal.OBJETO.Calculadora;
 import julioivanekcaamal.PERRO1.Perro1;
 import julioivanekcaamal.TERMOMETRO_DIGITAL.TermometroDigital;
 
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Perro1 p = new Perro1("chapa");
+        System.out.println(p.getNombre());
+    }
+}
