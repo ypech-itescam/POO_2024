@@ -10,7 +10,8 @@ import julioivanekcaamal.TERMOMETRO_DIGITAL.TermometroDigital;
 
 
 public class Main {
-    Nota n = new Nota();
+    Nota n = new Nota("00/00/00", "julio", " ", "normal", "hola que tal ");
+    n.getAutor();
    
     
 }
