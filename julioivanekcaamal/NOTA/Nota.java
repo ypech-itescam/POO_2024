@@ -1,19 +1,16 @@
 package julioivanekcaamal.NOTA;
-import java.util.Scanner;
 /**
  * Notas
  */
 public class Nota {
-    Scanner s = new Scanner(System.in);
     private String fecha;
     private String autor;
     private String fechaLimite;
     private String tipoNota;
     private String texto;
-    private Color color;
     
 
-    public Nota (){
+    public Nota (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
         setFecha(fecha);
         setAutor(autor);
         setFechaLimite(fechaLimite);
@@ -53,15 +50,9 @@ public class Nota {
         this.texto = texto.equals("")? "vacioooo...." : texto; 
     }
 
-    public void cambiarColorNota(){
-        
+    public void cambiarColorNota(){    
     }
     public void mostrarNota(){
-        System.out.println(fecha);
-        System.out.println(autor);
-        System.out.println(fechaLimite);
-        System.out.println(tipoNota);
-        System.out.println(texto);
     }
 
 }
