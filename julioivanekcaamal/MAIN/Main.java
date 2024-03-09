@@ -8,7 +8,8 @@ import julioivanekcaamal.PERRO1.Perro1;
 public class Main {
 
     public static void main(String[] args) {
-        Perro1 p = new Perro1("chapa");
+        Perro1 p = new Perro1("julio");
+        
         System.out.println(p.getNombre());
     }
 }
