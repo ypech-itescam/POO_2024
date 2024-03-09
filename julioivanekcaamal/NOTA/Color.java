@@ -2,9 +2,6 @@ package julioivanekcaamal.NOTA;
 /**
  * Color
  */
-import java.util.Scanner;
-
-
 public class Color {
 
     private String nombre;
@@ -26,10 +23,10 @@ public class Color {
         return ansi;
     }
     public void setColorAnsi(String ansi){
-        this.ansi = ansi.equals(" ")? " ":ansi;
+        this.ansi = ansi.equals(" ")? "\\e[0;37m":ansi;
     }
     public void colores(){
-       
+
     }
 }
 
