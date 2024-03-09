@@ -1,9 +1,10 @@
 package julioivanekcaamal.NOTA;
+import java.util.Scanner;
 /**
  * Notas
  */
 public class Nota {
-
+    Scanner s = new Scanner(System.in);
     private String fecha;
     private String autor;
     private String fechaLimite;
@@ -22,7 +23,8 @@ public class Nota {
         return fecha;
     }
     public void setFecha(String fecha){
-        this.fecha = fecha.equals(" ")? "00/00/00" : fecha;
+        this.fecha = fecha
+        .equals(" ")? "00/00/00" : fecha;
     }
     public String getAutor(){
         return autor;
@@ -54,9 +56,11 @@ public class Nota {
         
     }
     public void mostrarNota(){
-        
-
-
+        System.out.println(fecha);
+        System.out.println(autor);
+        System.out.println(fechaLimite);
+        System.out.println(tipoNota);
+        System.out.println(texto);
     }
 
 }
