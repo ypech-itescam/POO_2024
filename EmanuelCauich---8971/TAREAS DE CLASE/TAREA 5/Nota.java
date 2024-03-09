@@ -1,27 +1,25 @@
-import java.time.LocalDate;
-
-public class Hoja {
-    private LocalDate fecha;
+public class Nota{
+    private String fecha;
     private String tipo;
     private String texto;
-    private LocalDate fechaLimite;
+    private String fechaLimite;
     private String autor;
     private Color color;
 
-    public Hoja(int año, int mes, int dia, String tipo, String texto, String autor, int año2, int mes2, int dia2) {
-        setFecha(LocalDate.of(año, mes, dia));
+    public Nota(String fecha, String tipo, String texto, String autor, String fechaLimite) {
+        setFecha(fecha);
         setTipo(tipo);
         setTexto(texto);
-        setFechaLimite(LocalDate.of(año2, mes2, dia2));
+        setFechaLimite(fechaLimite);
         setAutor(autor);
         this.color = new Color("azul");
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -41,11 +39,11 @@ public class Hoja {
         this.texto = texto;
     }
 
-    public LocalDate getFechaLimite() {
+    public String getFechaLimite() {
         return fechaLimite;
     }
 
-    public void setFechaLimite(LocalDate fechaLimite) {
+    public void setFechaLimite(String fechaLimite) {
         this.fechaLimite = fechaLimite;
     }
 

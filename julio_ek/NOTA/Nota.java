@@ -1,16 +1,16 @@
-package julioivanekcaamal.NOTA;
+package julio_ek.NOTA;
 /**
  * Notas
  */
-public class Notas {
-
+public class Nota {
     private String fecha;
     private String autor;
     private String fechaLimite;
     private String tipoNota;
     private String texto;
+    
 
-    public Notas (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
+    public Nota (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
         setFecha(fecha);
         setAutor(autor);
         setFechaLimite(fechaLimite);
@@ -21,7 +21,8 @@ public class Notas {
         return fecha;
     }
     public void setFecha(String fecha){
-        this.fecha = fecha.equals(" ")? "00/00/00" : fecha;
+        this.fecha = fecha
+        .equals(" ")? "00/00/00" : fecha;
     }
     public String getAutor(){
         return autor;
@@ -49,11 +50,9 @@ public class Notas {
         this.texto = texto.equals("")? "vacioooo...." : texto; 
     }
 
-    public void cambiarColorNota(){
-        
+    public void cambiarColorNota(){    
     }
     public void mostrarNota(){
-        
     }
 
 }
