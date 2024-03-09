@@ -28,7 +28,7 @@ public class Computadora {
         return modelo;
     }
     public void setModelo(String modelo){
-        this.modelo=modelo.equals("")?:modelo;
+        this.modelo=modelo.equals("")?"82KU003XLM":modelo;
     }
     public int getMemoriaRAM(){
         return memoriaRAM;
