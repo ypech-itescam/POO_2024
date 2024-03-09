@@ -4,7 +4,7 @@ public class HolaMundo {
 
     public HolaMundo(String saludo, Color c) {
         setSaludo(saludo);
-        c= new Color("Magenta");
+        setColor();
     }
 
     public String getSaludo() {
