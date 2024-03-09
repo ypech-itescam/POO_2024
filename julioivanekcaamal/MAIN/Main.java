@@ -12,7 +12,7 @@ import julioivanekcaamal.TERMOMETRO_DIGITAL.TermometroDigital;
 public class Main {
 
     public static void main(String[] args) {
-       MiHolaMundo m = new MiHolaMundo("");
-       m.cambiarColor();
+      Nota j = new Nota();
+      j.mostrarNota();
     }
 }

@@ -11,7 +11,7 @@ public class Nota {
     private String texto;
     
 
-    public Nota (String fecha, String autor, String fechaLimite, String tipoNota, String texto){
+    public Nota (){
         setFecha(fecha);
         setAutor(autor);
         setFechaLimite(fechaLimite);
@@ -55,6 +55,8 @@ public class Nota {
     }
     public void mostrarNota(){
         
+
+
     }
 
 }
