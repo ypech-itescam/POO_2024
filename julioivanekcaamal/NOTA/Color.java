@@ -9,7 +9,7 @@ public class Color {
 
     private String nombre;
     private String ansi;
-    private Color color;
+    
 
     public Color(String nombre, String ansi){
         setColor(nombre);

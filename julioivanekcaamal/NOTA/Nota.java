@@ -10,6 +10,7 @@ public class Nota {
     private String fechaLimite;
     private String tipoNota;
     private String texto;
+    private Color color;
     
 
     public Nota (){

@@ -10,9 +10,7 @@ import julioivanekcaamal.TERMOMETRO_DIGITAL.TermometroDigital;
 
 
 public class Main {
-
-    public static void main(String[] args) {
-      Nota j = new Nota();
-      j.mostrarNota();
-    }
+    Nota n = new Nota();
+   
+    
 }
