@@ -34,7 +34,7 @@ public class Computadora {
         return memoriaRAM;
     }
     public void setMemoriaRAM(int memoriaRAM){
-        this.memoriaRAM=memoriaRAM!=0?memoriaRAM:8;
+        this.memoriaRAM=memoriaRAM==0?memoriaRAM:8;
     }
     public String getTipoSistema(){
         return tipoSistema;
@@ -50,12 +50,5 @@ public class Computadora {
     }
     public void apagar() {
         System.out.println("Apagando...");
-    }
-    public void info(){
-        System.out.println("Marca: "+getMarca());
-        System.out.println("Color: " +getColor());
-        System.out.println("Modelo: " + getModelo());
-        System.out.println("Memoria RAM: " + getMemoriaRAM() + " gb");
-        System.out.println("Tipo de Sistema: " +getTipoSistema());
     }
 }
