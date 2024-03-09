@@ -29,15 +29,11 @@ public class Color {
     }
     public void colores(){
         switch (nombre) {
-            case String rojo:
-                "\ e [0; 31m"
-                break;
-            default:
-                break;
-        }
+            
     }
 
 
+}
 }
 
 
