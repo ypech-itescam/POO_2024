@@ -43,15 +43,12 @@ public class Computadora {
         this.tipoSistema=tipoSistema.equals("")?"Windows":tipoSistema;
     }
     public void encender(){
-        System.out.println("La computadora se ha encendido");
+        System.out.println("Iniciando sesion...");
     }
     public void reiniciar(){
-        System.out.println("La computadora se ha reiniciado");
+        System.out.println("Reiniciado...");
     }
     public void apagar() {
-        System.out.println("La computadora se ha apagado.");
-    }
-    public void info(){
-        System.out.println("Mi computadora \n"+ "marca: "+ getMarca()+"modelo: "+ getModelo()+"color: "+getColor()+"memoria RAM: "+ getMemoriaRAM()+ " GB"+"sistema operativa: "+getTipoSistema());
+        System.out.println("Apagando...");
     }
 }
