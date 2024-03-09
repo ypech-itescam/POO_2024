@@ -2,10 +2,10 @@ public class Computadora {
     private String marca;
     private String color;
     private String modelo;
-    private String memoriaRAM;
+    private int memoriaRAM;
     private String tipoSistema;
 
-    public Computadora(String marca, String color, String modelo, String memoriaRAM, String tipoSistema){
+    public Computadora(String marca, String color, String modelo, int memoriaRAM, String tipoSistema){
         setMarca(marca);
         setColor(color);
         setModelo(modelo);
@@ -16,7 +16,7 @@ public class Computadora {
         return marca;
     }
     public void setMarca(String marca){
-        this.marca=marca.equals("")?"Lenovo":marca;
+        this.marca=marca.equals("")?"LENOVO":marca;
     }
     public String getColor(){
         return color;
@@ -28,13 +28,13 @@ public class Computadora {
         return modelo;
     }
     public void setModelo(String modelo){
-        this.modelo=modelo.equals("")?"23":modelo;
+        this.modelo=modelo.equals("")?"82KU003XLM":modelo;
     }
-    public String getMemoriaRAM(){
+    public int getMemoriaRAM(){
         return memoriaRAM;
     }
-    public void setMemoriaRAM(String memoriaRAM){
-        this.memoriaRAM=memoriaRAM.equals("")?"6 gb":memoriaRAM;
+    public void setMemoriaRAM(int memoriaRAM){
+        this.memoriaRAM=memoriaRAM!=0?memoriaRAM:8;
     }
     public String getTipoSistema(){
         return tipoSistema;
@@ -50,5 +50,8 @@ public class Computadora {
     }
     public void apagar() {
         System.out.println("La computadora se ha apagado.");
+    }
+    public void info(){
+        System.out.println("Mi computadora \n"+ "marca: "+ getMarca()+"modelo: "+ getModelo()+"color: "+getColor()+"memoria RAM: "+ getMemoriaRAM()+ " GB"+"sistema operativa: "+getTipoSistema());
     }
 }
