@@ -1,5 +1,3 @@
-package mariaisabeltrejomoo;
-
 public class Computadora {
     private String marca;
     private String color;
