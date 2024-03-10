@@ -45,21 +45,13 @@ public class Computadora {
     public void encender(){
         System.out.println("Iniciando sesion...");
     }
+    public void suspender(){
+        System.out.println("...Suspendiendo...");
+    }
     public void reiniciar(){
-        System.out.println("Reiniciado...");
+        System.out.println("Reiniciando...");
     }
     public void apagar() {
         System.out.println("Apagando...");
-    }
-    public static void main(String[] args) {
-        Computadora c = new Computadora("HP", "Negro","", 16, "Linux");
-        c.encender();
-        System.out.println("Marca: " + c.getMarca());
-        System.out.println("Color: " + c.getColor());
-        System.out.println("Modelo: " + c.getModelo());
-        System.out.println("Memoria RAM: " + c.getMemoriaRAM() + "GB");
-        System.out.println("Tipo de Sistema: " + c.getTipoSistema());
-        c.rena();
-        c.apagar();
     }
 }
