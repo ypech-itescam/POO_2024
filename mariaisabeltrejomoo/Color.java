@@ -2,8 +2,8 @@ public class Color {
     private String color;
     private String colorANSI;
 
-    public Color(String color){
-        setColor(color);
+    public Color(Color color){
+        setColor(colorANSI);
     }
     public String getColor(){
         return color;

@@ -1,10 +1,12 @@
+package mariaisabeltrejomoo;
+
 public class HolaMundo {
     private String saludo;
     private Color c;
 
     public HolaMundo(String saludo, Color c) {
         setSaludo(saludo);
-        setColor();
+        setColor(c);
     }
 
     public String getSaludo() {
@@ -23,6 +25,6 @@ public class HolaMundo {
     }
 
     public String show() {
-        return c.getAnsi() + getSaludo();
+        return c.getColorANSI() + getSaludo();
     }
 }

@@ -1,45 +1,51 @@
-public class Perro{
-	private String nombre;
-	private int edad;
-	private double peso;
-	private String raza;
-	private String estado;
+package mariaisabeltrejomoo;
 
-	public Perro(String nombre){
-		this.nombre=nombre;
+public class Perro{
+	private String nombreI;
+	private int edadI;
+	private double pesoI;
+	private String razaI;
+	private String estadoI;
+
+	public Perro(String nombreI, int edadI, double pesoI, String razaI, String estadoI){
+		setNombreI(nombreI);
+		setEdadI(edadI);
+		setPesoI(pesoI);
+		setRazaI(razaI);
+		setEstadoI(estadoI);
 	}
-	public String getNombre(){
-		return nombre;
+	public String getNombreI(){
+		return nombreI;
 	}
-	public void setNombre(String nombre){
-		this.nombre=nombre.equals("")? "Solovino": nombre;
+	public void setNombreI(String nombreI){
+		this.nombreI=nombreI.equals("")? "Solovino": nombreI;
 	}
-	public int getEdad(){
-		return edad;
+	public int getEdadI(){
+		return edadI;
 	}
-	public void setEdad(int edad){
-		this.edad=edad;
+	public void setEdadI(int edadI){
+		this.edadI=edadI==0?edadI:6;
 	}
-	public double getPeso(){
-		return peso;
+	public double getPesoI(){
+		return pesoI;
 	}
-	public void setPeso(double peso){
-		this.peso=peso;
+	public void setPesoI(double pesoI){
+		this.pesoI=pesoI==0? pesoI:56;
 	}
-	public String getRaza(){
-		return raza;
+	public String getRazaI(){
+		return razaI;
 	}
-	public void setRaza(String raza){
-		this.raza=raza;
+	public void setRazaI(String razaI){
+		this.razaI=razaI.equals("")? "XL BULLY": razaI;
 	}
-	public String getEstado(){
-		return estado;
+	public String getEstadoI(){
+		return estadoI;
 	}
-	public void setEstado(String estado){
-		this.estado=estado;
+	public void setEstadoI(String estadoI){
+		this.estadoI=estadoI.equals("")? "vivo": estadoI;
 	}
 	public void ladrar(){
-		if(!getEstado().equals("muerto")){
+		if(!getEstadoI().equals("muerto")){
 			System.out.println("Gua, Gua, Gua, Gua, Gua");
 		}
 		else{
@@ -47,7 +53,7 @@ public class Perro{
 		}
 	}
 	public void comer(String comida){
-		if(!getEstado().equals("muerto")){
+		if(!getEstadoI().equals("muerto")){
 			System.out.println("Estoy comiendo " + comida);
 		}
 		else{
@@ -55,7 +61,7 @@ public class Perro{
 		}
 	}
 	public void jugar(String pelota){
-		if(!getEstado().equals("muerto")){
+		if(!getEstadoI().equals("muerto")){
 			System.out.println("Estoy jugando con la " + pelota);
 		}
 		else{
@@ -63,7 +69,7 @@ public class Perro{
 		}
 	}
 	public void moverCola(){
-		if(!getEstado().equals("muerto")){
+		if(!getEstadoI().equals("muerto")){
 			System.out.println("Estoy moviendo la cola");
 		}
 		else{

@@ -1,3 +1,5 @@
+package mariaisabeltrejomoo;
+
 public class Computadora {
     private String marca;
     private String color;
@@ -34,7 +36,7 @@ public class Computadora {
         return memoriaRAM;
     }
     public void setMemoriaRAM(int memoriaRAM){
-        this.memoriaRAM=memoriaRAM!=0?memoriaRAM:8;
+        this.memoriaRAM=memoriaRAM==0?memoriaRAM:8;
     }
     public String getTipoSistema(){
         return tipoSistema;
@@ -43,15 +45,15 @@ public class Computadora {
         this.tipoSistema=tipoSistema.equals("")?"Windows":tipoSistema;
     }
     public void encender(){
-        System.out.println("La computadora se ha encendido");
+        System.out.println("Iniciando sesion...");
+    }
+    public void suspender(){
+        System.out.println("...Suspendiendo...");
     }
     public void reiniciar(){
-        System.out.println("La computadora se ha reiniciado");
+        System.out.println("Reiniciando...");
     }
     public void apagar() {
-        System.out.println("La computadora se ha apagado.");
-    }
-    public void info(){
-        System.out.println("Mi computadora \n"+ "marca: "+ getMarca()+"modelo: "+ getModelo()+"color: "+getColor()+"memoria RAM: "+ getMemoriaRAM()+ " GB"+"sistema operativa: "+getTipoSistema());
+        System.out.println("Apagando...");
     }
 }
