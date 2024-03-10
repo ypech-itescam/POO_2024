@@ -1,3 +1,5 @@
+package mariaisabeltrejomoo;
+
 public class Perro{
 	private String nombreI;
 	private int edadI;
