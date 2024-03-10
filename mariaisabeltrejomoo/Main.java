@@ -1,5 +1,3 @@
-package mariaisabeltrejomoo;
-
 public class Main {
     public static void main(String[] args) {
         Computadora c = new Computadora("HP", "Negro","", 16, "Linux");
