@@ -24,25 +24,25 @@ public class Perro{
 		return edadI;
 	}
 	public void setEdadI(int edadI){
-		this.edadI=edadI;
+		this.edadI=edadI==0?edadI:6;
 	}
 	public double getPesoI(){
 		return pesoI;
 	}
 	public void setPesoI(double pesoI){
-		this.pesoI=pesoI;
+		this.pesoI=pesoI==0? pesoI:56;
 	}
 	public String getRazaI(){
 		return razaI;
 	}
 	public void setRazaI(String razaI){
-		this.razaI=razaI;
+		this.razaI=razaI.equals("")? "XL BULLY": razaI;
 	}
 	public String getEstadoI(){
 		return estadoI;
 	}
 	public void setEstadoI(String estadoI){
-		this.estadoI=estadoI;
+		this.estadoI=estadoI.equals("")? "vivo": estadoI;
 	}
 	public void ladrar(){
 		if(!getEstadoI().equals("muerto")){
