@@ -17,6 +17,9 @@ public class Main {
         System.out.println("Memoria RAM: " + c.getMemoriaRAM() + "gb");
         System.out.println("Tipo de sistema: " + c.getTipoSistema());
         c.apagar();
+
+        HolaMundo hl= new HolaMundo("Hola Mundo", "azul");
+        hl.show();
         
     }
 }
