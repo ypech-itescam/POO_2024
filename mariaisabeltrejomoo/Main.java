@@ -1,6 +1,10 @@
+package mariaisabeltrejomoo;
+import Perr
 public class Main {
     public static void main(String[] args) {
-        Computadora computadora = new Computadora("HP", "Negro","", 16, "Linux");
+        Perro p=new Perro()
+        System.out.println(p.getNombre());
+        Computadora computadora = new Computadora(" ", " ", " ", 0, " ");
         computadora.encender();
         System.out.println("Marca: " + computadora.getMarca());
         System.out.println("Color: " + computadora.getColor());
@@ -8,5 +12,6 @@ public class Main {
         System.out.println("Memoria RAM: " + computadora.getMemoriaRAM() + "gb");
         System.out.println("Tipo de sistema: " + computadora.getTipoSistema());
         computadora.apagar();
+
     }
 }
