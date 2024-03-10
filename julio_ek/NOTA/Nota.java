@@ -54,5 +54,9 @@ public class Nota {
     }
     public void mostrarNota(){
     }
+    public static void main(String[] args) {
+        Nota n = new Nota(" ", " ", " ", " ", " ");
+        System.out.println(n.getAutor());
+    }
 
 }
