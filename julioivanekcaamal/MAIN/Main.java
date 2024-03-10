@@ -8,7 +8,7 @@ import julioivanekcaamal.PERRO1.Perro1;
 public class Main {
 
     public static void main(String[] args) {
-        julioivanekcaamal.PERRO1.Perro1 p = new julioivanekcaamal.PERRO1.Perro1("cahapa");
+        Perro1 p = new Perro1("cahapa");
         System.out.println(p.getNombre());
 
     }
