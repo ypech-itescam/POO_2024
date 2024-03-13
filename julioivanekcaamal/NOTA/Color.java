@@ -2,17 +2,14 @@ package julioivanekcaamal.NOTA;
 /**
  * Color
  */
-import java.util.Scanner;
-
-
 public class Color {
 
     private String nombre;
     private String ansi;
+    
 
-    public Color(String nombre, String ansi){
+    public Color(String nombre){
         setColor(nombre);
-        this.ansi = ansi;
     }
 
     public String getColor(){
@@ -24,12 +21,13 @@ public class Color {
     public String getColorAnsi(){
         return ansi;
     }
-    public void setColorAnsi(){
-        Scanner A = new Scanner(System.in);
-        System.out.print("Que color desea su mensaje : rojo,verde,amarillo y azul. (color en minusculas) = ");
-        String color = A.nextLine();
-            
+    public void setColorAnsi(String ansi){
+
     }
-
-
+    
 }
+
+
+
+//color = nombre == ansi 
+//Color 
