@@ -17,7 +17,7 @@ public class Notas {
         setNombre(nombre);
         
     }
-
+    
     public String getImportancia() {
         return importancia;
     }
