@@ -4,7 +4,7 @@ public class BlocDeNota{
     public Nota nota;
 
     public BlocDeNota(Nota nota){
-        nota = new No;
+        nota = new Nota;
     }
     public boolean addNota(Nota n){
         return true;

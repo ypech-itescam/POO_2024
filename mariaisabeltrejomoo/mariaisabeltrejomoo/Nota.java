@@ -1,14 +1,14 @@
 package mariaisabeltrejomoo;
 public class Nota{
-    private String fecha;
+    private String fechaI;
     private String tipo;
     private String cuerpoNota;
     private String fechaLimite;
     private String autor;
     private Color color;
 
-    public Nota (String fecha, String tipo, String cuerpoNota, String fechaLimite, String autor, Color color){
-        setFecha(fecha);
+    public Nota (String fechaI, String tipo, String cuerpoNota, String fechaLimite, String autor, Color color){
+        setFechaI(fechaI);
         setTipo(tipo);
         setCuerpoNota(cuerpoNota);
         setFechaLimite(fechaLimite);
@@ -16,12 +16,12 @@ public class Nota{
         setColor(color);
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getFechaI() {
+        return fechaI;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechaI(String fechaI) {
+        this.fechaI = fechaI;
     }
 
     public String getTipo() {
@@ -62,6 +62,6 @@ public class Nota{
     }
 
     public String toString(){
-        return("   " + getFecha() + "\n" + getTipo() + "\n" + getCuerpoNota() + "\nFecha limite: "+getFechaLimite() + "\n" + getAutor());
+        return("   " + getFechaI() + "\n" + getTipo() + "\n" + getCuerpoNota() + "\nFecha limite: "+getFechaLimite() + "\n" + getAutor());
     }
 }
