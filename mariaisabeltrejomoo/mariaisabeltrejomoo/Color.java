@@ -1,17 +1,18 @@
+package mariaisabeltrejomoo;
 public class Color {
-    private String color;
+    private String colorI;
     private String colorANSI;
 
-    public Color(Color color){
+    public Color(Color colorI){
         setColor(colorANSI);
     }
     public String getColor(){
-        return color;
+        return colorI;
     }
-    public void setColor(String color){
-        if(color.equals(" ")){
-            this.color=color;
-            switch(color) {
+    public void setColor(String colorI){
+        if(colorI.equals(" ")){
+            this.colorI=colorI;
+            switch(colorI) {
                 case "negro":
                 case "Negro":
                     this.colorANSI="\033[30m";
@@ -41,7 +42,7 @@ public class Color {
                     this.colorANSI="\033[36m";
                     break;
                 default:
-                    this.color="blanco";
+                    this.colorI="blanco";
                     this.colorANSI="\033[37m";
                     break;
             }

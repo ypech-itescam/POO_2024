@@ -1,3 +1,4 @@
+package mariaisabeltrejomoo;
 public class Nota{
     private String fecha;
     private String tipo;
