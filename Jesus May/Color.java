@@ -10,22 +10,22 @@ public class Color{
          this.color = color;
          switch (color.toLowerCase()) {
             case "negro":
-                this.colorHex = "\033[30m";
+                this.colorAnsi = "\033[30m";
                 break;
             case "rojo":
-                this.colorHex = "\033[31m";
+                this.colorAnsi = "\033[31m";
                 break;
             case "verde":
-                this.colorHex = "\033[32m";
+                this.colorAnsi = "\033[32m";
                 break;
             case "amarillo":
-                this.colorHex = "\033[33m";
+                this.colorAnsi = "\033[33m";
                 break;
             case "azul":
-                this.colorHex = "\033[34m";
+                this.colorAnsi = "\033[34m";
                 break;
             default:
-                this.colorHex = "\033[37m";
+                this.colorAnsi = "\033[37m";
         };
      }
 
