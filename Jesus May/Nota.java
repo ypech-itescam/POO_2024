@@ -1,23 +1,20 @@
-import java.util.Scanner;
-
-public class Notas {
+public class Nota {
     private String importancia;
     private String fecha;
     private String texto;
     private String fechaLimite;
     private String nombre;
-    private Color color;
+    private String colorHex;
 
-    public Notas(String importancia, String fecha, String texto, String fechaLimite, String nombre, String color) {
-        color = new Color(color);
+    public BlocNotas(String importancia, String fecha, String texto, String fechaLimite, String nombre, String color) {
         setImportancia(importancia);
         setFecha(fecha);
         setTexto(texto);
         setFechaLimite(fechaLimite);
         setNombre(nombre);
-        
+        setColor(color);
     }
-    
+
     public String getImportancia() {
         return importancia;
     }
@@ -55,8 +52,35 @@ public class Notas {
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre.trim().isEmpty() ? "Jesus" : nombre;
+        this.nombre = nombre.trim().isEmpty() ? "Yaqui" : nombre;
     }
+
+    public String getColorHex() {
+        return colorHex;
+    }
+
+    public void setColor(String color) {
+        switch (color.toLowerCase()) {
+            case "negro":
+                this.colorHex = "\033[30m";
+                break;
+            case "rojo":
+                this.colorHex = "\033[31m";
+                break;
+            case "verde":
+                this.colorHex = "\033[32m";
+                break;
+            case "amarillo":
+                this.colorHex = "\033[33m";
+                break;
+            case "azul":
+                this.colorHex = "\033[34m";
+                break;
+            default:
+                this.colorHex = "\033[37m";
+        }
+    }
+
     public String show() {
         return (
             getColorHex() + "Importancia: " + getImportancia() + "\n" +
@@ -69,30 +93,22 @@ public class Notas {
     }
 
     public static void main(String[] args) {
-        System.out.println(getColor);
-        Scanner scanner = new Scanner(System.in);
-
+       
         System.out.print("Importancia: ");
-        String importancia = scanner.nextLine();
-
+       
         System.out.print("Fecha: ");
-        String fecha = scanner.nextLine();
 
         System.out.print("Texto: ");
-        String texto = scanner.nextLine();
-
+        
         System.out.print("Fecha Límite: ");
-        String fechaLimite = scanner.nextLine();
 
         System.out.print("Nombre: ");
-        String nombre = scanner.nextLine();
-
+       
         System.out.print("Color (negro, rojo, verde, amarillo, azul, por defecto): ");
-        String color = scanner.nextLine();
-
-        BlocDeNotas nota = new BlocDeNotas(importancia, fecha, texto, fechaLimite, nombre, color);
+       
+        BlocNotas nota = new BlocNotas("importancia", "fecha", "texto", "fechaLimite", "nombre", color);
         System.out.println(nota.show());
 
-        scanner.close();
+        
     }
 }
