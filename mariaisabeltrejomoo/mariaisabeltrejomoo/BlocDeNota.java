@@ -1,10 +1,10 @@
 package mariaisabeltrejomoo;
 
 public class BlocDeNota{
-    public Nota nota;
+    public Nota n;
 
-    public BlocDeNota(Nota nota){
-        nota = new Nota;
+    public BlocDeNota(Nota n){
+        Nota n = new Nota();
     }
     public boolean addNota(Nota n){
         return true;

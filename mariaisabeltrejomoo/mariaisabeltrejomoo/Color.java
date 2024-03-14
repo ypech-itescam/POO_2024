@@ -1,58 +1,54 @@
 package mariaisabeltrejomoo;
 public class Color {
-    private String colorI;
+    private String color;
     private String colorANSI;
 
-    public Color(Color colorI){
-        setColor(colorANSI);
+    public Color(String color) {
+        setColor(color);
     }
-    public String getColor(){
-        return colorI;
+
+    public String getColor() {
+        return color;
     }
-    public void setColor(String colorI){
-        if(colorI.equals(" ")){
-            this.colorI=colorI;
-            switch(colorI) {
+
+    public void setColor(String color) {
+        if (!color.equals(" ")) {
+            this.color= color;
+            switch (color){
                 case "negro":
-                case "Negro":
-                    this.colorANSI="\033[30m";
+                    this.colorANSI = "\u001B[30m";
                     break;
                 case "rojo":
-                case "Rojo":
-                    this.colorANSI="\033[31m";
+                    this.colorANSI = "\u001B[31m";
                     break;
                 case "verde":
-                case "Verde":
-                    this.colorANSI="\033[32m";
+                    this.colorANSI = "\u001B[32m";
                     break;
                 case "amarillo":
-                case "Amarrillo":
-                    this.colorANSI="\033[33m";
+                    this.colorANSI = "\u001B[33m";
                     break;
                 case "azul":
-                case "Azul":                
-                   this.colorANSI="\033[34m";
+                    this.colorANSI = "\u001B[34m";
                     break;
                 case "magenta":
-                case "Magenta":
-                    this.colorANSI="\033[35m";
+                    this.colorANSI = "\u001B[35m";
                     break;
                 case "cyan":
-                case "Cyan":
-                    this.colorANSI="\033[36m";
+                    this.colorANSI = "\u001B[36m";
                     break;
                 default:
-                    this.colorI="blanco";
-                    this.colorANSI="\033[37m";
+                    this.color = "blanco";
+                    this.colorANSI = "\u001B[37m";
                     break;
             }
         }
     }
+
     public String getColorANSI() {
         return colorANSI;
     }
 
-    public void setColorANSI(String colorANSI){
-        this.colorANSI=colorANSI;
+    public void setColorANSI(String colorANSI) {
+        this.colorANSI = colorANSI;
     }
 }
