@@ -6,7 +6,7 @@ public class Nota {
     private String nombre;
     private String colorHex;
 
-    public BlocNotas(String importancia, String fecha, String texto, String fechaLimite, String nombre, String color) {
+    public Nota(String importancia, String fecha, String texto, String fechaLimite, String nombre, String color) {
         setImportancia(importancia);
         setFecha(fecha);
         setTexto(texto);
@@ -106,8 +106,8 @@ public class Nota {
        
         System.out.print("Color (negro, rojo, verde, amarillo, azul, por defecto): ");
        
-        BlocNotas nota = new BlocNotas("importancia", "fecha", "texto", "fechaLimite", "nombre", color);
-        System.out.println(nota.show());
+        Nota nota = new Nota ("importancia", "fecha", "texto", "fechaLimite", "nombre","color");
+        System.out.println(Nota());
 
         
     }
