@@ -1,33 +1,25 @@
 package DanaChin.Progrmas.avatar;
 
 public class Eva {
-    // Atributos
-    private String paisDelEva;
     private String modelo;
     private String color;
-    private int altura;
-    private int estado;// 1 apagado //2 prendido //3apagado
+    private String piloto;
+    private String pais;
+    private double altura;// 200 metros
 
     // Constructor
-    public Eva(String paisDelEva, String modelo, String color, int altura,) {
-        setPaisDelEva(paisDelEva);
+    public Eva(String modelo, String piloto, String color, String pais, double altura) {
         setModelo(modelo);
-        setColor(color);
+        setColor(color, color);
+        setPiloto(piloto);
+        setPais(pais);
         setAltura(altura);
-        setEstado(3);
+
     }
 
-    // Métodos Get y Set con switch
-    public String getPaisDelEva() {
-        return paisDelEva = paisDelEva;
-    }
-
-    public void setPaisDelEva(String paisDelEva) {
-        this.paisDelEva = paisDelEva;
-    }
-
+    // Métodos getter y setter para el modelo y el piloto
     public String getModelo() {
-        return modelo = modelo;
+        return modelo;
     }
 
     public void setModelo(String modelo) {
@@ -35,72 +27,34 @@ public class Eva {
     }
 
     public String getColor() {
-        return color = color;
+        return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String Color, String string) {
+        this.color = string;
     }
 
-    public int getAltura() {
-        return altura = altura;
+    public String getPiloto() {
+        return piloto;
     }
 
-    public void setAltura(int altura) {
+    public void setPiloto(String piloto) {
+        this.piloto = piloto;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
         this.altura = altura;
-    }
-
-    public int getEstado() {
-        return estado = estado;
-    }
-
-    public void setEstado(int estado) {
-        this.estado = estado;
-    }
-
-    // Acciones
-    public void correr(int accion) {
-        switch (accion) {
-            case 1:
-                System.out.println("Corriendo para llegar al destino.");
-                break;
-            case 2:
-                System.out.println("Corriendo para salvar a otro EVA en peligro.");
-                break;
-            case 3:
-                System.out.println("Corriendo para alcanzar el objetivo.");
-                break;
-            default:
-                System.out.println("Acción de correr no reconocida.");
-        }
-    }
-
-    public void pelea(int accion) {
-        switch (accion) {
-            case 1:
-                System.out.println("Peleando para derrotar al Ángel.");
-                break;
-            case 2:
-                System.out.println("Peleando contra otro piloto de EVA.");
-                break;
-            case 3:
-                System.out.println("La alma dentro del EVA ha reaccionado en la pelea.");
-                break;
-            default:
-                System.out.println("Acción de pelea no reconocida.");
-        }
-    }
-
-    public void camina(int accion) {
-        switch (accion) {
-            case 1:
-                System.out.println("Caminando de regreso a la base.");
-                break;
-            case 2:
-                System.out.println("Caminando según deseo del piloto.");
-                break;
-            default:
-                System.out.println("Acción de caminar no reconocida.");
-        }
     }
 }
